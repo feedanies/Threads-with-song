@@ -66,23 +66,15 @@ namespace ConsoleApp5
                     }
                     else if (key == ConsoleKey.D3)
                     {
-                        if(song1 != null && song2 != null)
+                        if(song1 == null && song2 == null)
+                        {
+                            Console.WriteLine("Hecbir mahni oxunmur...");
+                        }
+                        else
                         {
                             if (song1 != null) { song1.Kill(); song1 = null; }
                             if (song2 != null) { song2.Kill(); song2 = null; }
                             Console.WriteLine("Her iki mahni baglandi...");
-                        }
-                        else if(song1!=null && song2 == null)
-                        {
-                            Console.WriteLine("Hal-hazirda yalniz 1ci mahni oxunur...");
-                        }
-                        else if (song1 == null && song2 != null)
-                        {
-                            Console.WriteLine("Hal-hazirda yalniz 2ci mahni oxunur...");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Hecbir mahni oxunmur...");
                         }
                     }
                     else if (key == ConsoleKey.D4)
