@@ -74,7 +74,7 @@ namespace ConsoleApp5
                         {
                             if (song1 != null) { song1.Kill(); song1 = null; }
                             if (song2 != null) { song2.Kill(); song2 = null; }
-                            Console.WriteLine("Her iki mahni baglandi...");
+                            Console.WriteLine("Butun mahnilar baglandi...");
                         }
                     }
                     else if (key == ConsoleKey.D4)
